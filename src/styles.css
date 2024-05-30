@@ -1,0 +1,18 @@
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+.example-class {
+    @apply text-lg; 
+  }
+  
+.example-class-iphone15 {
+    @apply text-base; 
+  }
+
+#projects img {
+  display: block;
+  margin-top: 20px;
+}
+
+
