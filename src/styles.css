@@ -2,17 +2,26 @@
 @tailwindcss components;
 @tailwindcss utilities;
 
-.example-class {
-    @apply text-lg; 
-  }
-  
-.example-class-iphone15 {
-    @apply text-base; 
-  }
-
 #projects img {
   display: block;
   margin-top: 20px;
 }
 
-
+@media (max-width: 390px) {
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  .h-96-w-96 {
+    height: 20rem;
+    width: 20rem;
+  }
+  .flex-col-mb-4 {
+    margin-bottom: 1rem;
+  }
+  .gap-x-32 {
+    gap: 8px;
+  }
+  .space-y-24 {
+    margin-bottom: 8px;
+  }
+}
