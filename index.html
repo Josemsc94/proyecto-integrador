@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="h-screen bg-gray-800 overflow-x-hidden">
+<body class="h-screen w-full bg-gray-800 overflow-x-hidden">
   <header class="sticky top-0 w-full h-14 bg-gray-800 shadow-lg z-10">
     <div class="container mx-auto flex items-center h-full px-4">
       <div class="flex items-center gap-1 text-primary">
@@ -26,16 +26,16 @@
       </nav>
     </div>
   </header>
-  <main class="relative top-16 h-[calc(100vh-64px)]">
-    <section id="about" class="h-full w-full">
+  <main class="relative top-16 h-full w-full">
+    <section id="about" class="h-full w-full flex flex-col">
       <div class="container mx-auto h-full grid grid-cols-1 md:grid-cols-2">
         <div class="flex flex-col justify-center px-10 mb-32">
           <h1 class="text-5xl md:text-6xl font-bold text-white mb-8">¡Hola!, soy <span class="text-yellow-400">Jose Miguel S&aacute;nchez Cano</span></h1>
           <p class="text-2xl text-white mb-8">En este <span class="text-yellow-300">espacio</span> podr&aacute;s conocer un poco sobre mí, mi perfil de trabajo y mi experiencia como <span class="text-yellow-300">Programador Full Stack</span></p>
         </div>
         <div class="flex flex-col justify-center items-center">
-          <div class="flex justify-center items-center">
-            <img class="mb-40 h-96-w-96 object-cover rounded-full border-4 border-yellow-400 bg-white ring-inset ring-8 ring-yellow-200" src="./assets/img/avatar6.svg">
+          <div class="flex flex-col justify-center items-center h-96 w-96">
+            <img class="flex flex-col mb-40 object-cover rounded-full border-4 border-yellow-400 bg-white ring-inset ring-8 ring-yellow-200" src="./assets/img/avatar6.svg">
           </div>
         </div>
       </div>
@@ -45,10 +45,10 @@
         <h2 class="text-5xl font-bold example-class border-b-2 border-gray-500 text-gray-800">Sobre mí</h2>
         <div class="text-2xl text-gray-800 mb-8 md:flex md:flex-col md:items-start md:ml-20">
           <div class="flex mb-16 gap-x-32 ml-8">
-            <img src="./assets/img/gps.gif" class="border-4 border-gray-800 h-32 w-32 rounded-full">
-            <img src="./assets/img/skecth.png" class="border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2">
-            <img src="./assets/img/plano.png" class="border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2">
-            <img src="./assets/img/ecommerce.png" class="border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2">
+            <img src="./assets/img/gps.gif" class="object-cover border-4 border-gray-800 h-32 w-32 rounded-full">
+            <img src="./assets/img/skecth.png" class="object-cover border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2">
+            <img src="./assets/img/plano.png" class="object-cover border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2">
+            <img src="./assets/img/ecommerce.png" class="object-cover border-4 border-gray-800 h-32 w-32 rounded-full bg-white mr-2 flex flex-col">
           </div>
           <p class="text-justify">Nac&iacute en Cali, Valle del Cauca/Colombia y actualmente vivo en Girardota, Antioquia/Colombia. Soy estudiante de programación full stack, de e-commerce y marketing digital, también tengo conocimientos en otras áreas como el inglés, el diseño gráfico, el dibujo y la arquitectura, además manejo aplicaciones como Autocad, Photoshop y Sketchup.</p>
         </div>
@@ -61,15 +61,15 @@
           <div class="md:flex">
             <ul class="space-y-24 text-2xl text-white">
               <li class="flex items-center space-x-4 text-yellow-200">
-                <img src="./assets/img/html.png" class="h-14 w-16" alt="HTML Icon">
+                <img src="./assets/img/html.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="HTML Icon">
                 <span>HTML</span>
               </li>
               <li class="flex items-center space-x-4 text-yellow-200">
-                <img src="./assets/img/css.png" class="h-14 w-16" alt="CSS Icon">
+                <img src="./assets/img/css.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="CSS Icon">
                 <span>CSS (Tailwind)</span>
               </li>
               <li class="flex items-center space-x-4 text-yellow-200">
-                <img src="./assets/img/javascript.png" class="h-16 w-16" alt="JavaScript Icon">
+                <img src="./assets/img/javascript.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="JavaScript Icon">
                 <span>JavaScript</span>
               </li>
             </ul>
@@ -77,15 +77,15 @@
           <div class="md:flex gap-10">
             <ul class="text-2xl text-white mb-8 space-y-24">
               <li class="flex items-center space-x-reverse gap-5 text-yellow-200">
-                <img src="./assets/img/autocad.png" class="h-14 w-16" alt="Autocad Icon">
+                <img src="./assets/img/autocad.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="Autocad Icon">
                 <span>Autocad</span>
               </li>
               <li class="flex items-center space-x-reverse gap-5 text-yellow-200">
-                <img src="./assets/img/photoshop.png" class="h-16 w-16" alt="Photoshop Icon">
+                <img src="./assets/img/photoshop.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="Photoshop Icon">
                 <span>Photoshop</span>
               </li>
               <li class="flex items-center space-x-reverse gap-5 text-yellow-200">
-                <img src="./assets/img/sketchup.png" class="h-16 w-16" alt="Sketchup Icon">
+                <img src="./assets/img/sketchup.png" class="h-16 w-16 border-4 border-yellow-400 rounded-full bg-white" alt="Sketchup Icon">
                 <span>Sketchup</span>
               </li>
             </ul>
@@ -128,4 +128,3 @@
 </body>
 
 </html>
-

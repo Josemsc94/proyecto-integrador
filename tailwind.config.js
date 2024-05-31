@@ -9,9 +9,7 @@ module.exports = {
         "secundaryText": "#fdba74",
         "smoothText": "##fed7aa",
       },
-      screens: {
-      'iphone15': '390px',  // Breakpoint para iPhone 15
-      },
+
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },

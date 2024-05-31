@@ -2,6 +2,13 @@
 @tailwindcss components;
 @tailwindcss utilities;
 
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
 #projects img {
   display: block;
   margin-top: 20px;
