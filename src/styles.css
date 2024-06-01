@@ -2,19 +2,137 @@
 @tailwindcss components;
 @tailwindcss utilities;
 
-.hidden {
-  display: none;
-}
-.visible {
-  display: block;
-}
-
-#projects img {
-  display: block;
-  margin-top: 20px;
+header {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (max-width: 390px) {
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem; /* Tamaño del texto en pantallas grandes */
+  }
+  h2 {
+    font-size: 2.5rem; /* Tamaño del texto en pantallas grandes */
+  }
+  p {
+    font-size: 1.5rem; /* Tamaño del texto en pantallas grandes */
+  }
+
+  header {
+    max-width: 1024px; /* Adjust the maximum width of the header */
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; /* Ajuste del tamaño del texto */
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  #imgaboutme {
+    gap: 1rem;
+  }
+
+  #imgaboutme img {
+    flex: 1 1 45%; /* Las imágenes ocupan el 45% del ancho del contenedor */
+    max-width: 45%;
+  }
+
+  #imgaboutme {
+    gap: 1rem;
+  }
+
+  #imgaboutme img {
+    flex: 1 1 45%; /* Las imágenes ocupan el 45% del ancho del contenedor */
+    max-width: 45%;
+  }
+
+  header {
+    max-width: 768px; /* Adjust the maximum width of the header */
+  }
+}
+   
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  #about {
+    padding: 2rem;
+  }
+  #about .container {
+    flex-direction: column;
+  }
+  #about .text {
+    max-width: 100%;
+  }
+  #about .image {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #imgaboutme img {
+    flex: 1 1 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+    max-width: 100%;
+  }
+
+  #contenidonav {
+    gap: 8px;
+  }
+  
+  .space-y-24 > * + * {
+    margin-top: 2rem; /* Ajusta según sea necesario */
+  }
+
+  header {
+    max-width: 480px; /* Adjust the maximum width of the header */
+    flex-direction: column;
+  }
+
+ .container {
+    padding: 0;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 430px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+
   .flex-col-reverse {
     flex-direction: column-reverse;
   }
@@ -31,4 +149,53 @@
   .space-y-24 {
     margin-bottom: 8px;
   }
+
+  .mb-8 > * + * {
+    margin-top: 2rem; }
+
+  #contenidonav {
+    gap: 4px;
+  }
+
+  header {
+    max-width: 320px; /* Adjust the maximum width of the header */
+  }
+
 }
+
+/* Contenedores y texto */
+section {
+  padding: 1rem; /* Padding para evitar desplazamiento lateral */
+  max-width: 100%; /* Añade un ancho máximo */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#imgaboutme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Ajusta el espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%; /* Añade un ancho máximo */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#imgaboutme img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del texto para ajustarse a diferentes tamaños de pantalla */
+h1, h2, p {
+  font-size: calc(1rem + 1vw);
+}
+
